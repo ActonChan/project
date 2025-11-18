@@ -115,6 +115,15 @@ class ModelConfig:
     gb_n_iter_no_change: int = 10
     gb_tol: float = 1e-4
     
+    # CNN parameters
+    cnn_learning_rate: float = 0.001    # CNN学习率
+    cnn_batch_size: int = 32            # CNN批处理大小
+    cnn_epochs: int = 100               # CNN训练轮数
+    cnn_dropout_rate: float = 0.2       # CNN dropout率
+    cnn_filters: List[int] = field(default_factory=lambda: [64, 128, 256])  # CNN卷积滤波器数量
+    cnn_kernel_size: int = 3            # CNN卷积核大小
+    cnn_random_state: int = 42          # CNN随机种子
+    
     # Regularization parameters
     regularization_alpha: float = 1.0     # Regularization strength
     l1_ratio: float = 0.5                 # L1/L2 ratio for Elastic Net
@@ -186,6 +195,7 @@ class OutputConfig:
     # Model-specific result directories
     linear_result_dir: str = "./output/linear_results/"
     gradient_result_dir: str = "./output/gradient_results/"
+    cnn_result_dir: str = "./output/cnn_results/"
     
     # File naming
     model_filename: str = "trained_model.pkl"
@@ -224,6 +234,7 @@ class ConfigManager:
         os.makedirs(self.output_config.output_dir, exist_ok=True)
         os.makedirs(self.output_config.linear_result_dir, exist_ok=True)
         os.makedirs(self.output_config.gradient_result_dir, exist_ok=True)
+        os.makedirs(self.output_config.cnn_result_dir, exist_ok=True)
     
     def get_config(self, config_type: str) -> Any:
         """
@@ -330,6 +341,16 @@ class ConfigManager:
                 'fit_intercept': self.model_config.elastic_net_fit_intercept,
                 'random_state': self.model_config.elastic_net_random_state,
                 'max_iter': self.model_config.elastic_net_max_iter
+            }
+        elif model_type == 'cnn':
+            return {
+                'learning_rate': self.model_config.cnn_learning_rate,
+                'batch_size': self.model_config.cnn_batch_size,
+                'epochs': self.model_config.cnn_epochs,
+                'dropout_rate': self.model_config.cnn_dropout_rate,
+                'filters': self.model_config.cnn_filters,
+                'kernel_size': self.model_config.cnn_kernel_size,
+                'random_state': self.model_config.cnn_random_state
             }
         else:
             return {}

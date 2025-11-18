@@ -23,6 +23,7 @@ from data_loader import DataLoader
 from data_preprocessor import DataPreprocessor
 from linear_model import LinearRegressionModel, LinearRegressionTrainer
 from gradient_boosting_model import GradientBoostingModel, GradientBoostingTrainer
+from cnn_model import CNNRegressionModel
 from config import ConfigManager
 
 # Set up plotting style
@@ -62,6 +63,7 @@ class MedicalInsuranceSystem:
         self.data_preprocessor = DataPreprocessor()
         self.linear_model = LinearRegressionModel()
         self.gradient_model = GradientBoostingModel()
+        self.cnn_model = CNNRegressionModel()
         self.linear_trainer = LinearRegressionTrainer()
         self.gradient_trainer = GradientBoostingTrainer()
         
@@ -76,6 +78,7 @@ class MedicalInsuranceSystem:
         os.makedirs(self.config.output_config.output_dir, exist_ok=True)
         os.makedirs(os.path.join(self.config.output_config.output_dir, "linear_results"), exist_ok=True)
         os.makedirs(os.path.join(self.config.output_config.output_dir, "gradient_results"), exist_ok=True)
+        os.makedirs(os.path.join(self.config.output_config.output_dir, "cnn_results"), exist_ok=True)
         
         logger.info("Medical Insurance Prediction System initialized")
     
@@ -240,6 +243,43 @@ class MedicalInsuranceSystem:
             except Exception as e:
                 logger.error(f"Gradient boosting model training failed: {e}")
             
+            # Train CNN model
+            logger.info("Training CNN model")
+            try:
+                # Create CNN model
+                cnn_model = self.cnn_model
+                
+                # Get hyperparameters
+                params = self.cnn_model.get_hyperparameters(self.config)
+                
+                # Update model with hyperparameters
+                if params:
+                    cnn_model.hyperparameters.update(params)
+                
+                # Prepare data for CNN (reshape for 1D CNN)
+                logger.info("Preparing data for CNN training")
+                X_train_cnn = X_train.values.reshape((X_train.shape[0], X_train.shape[1], 1))
+                X_test_cnn = X_test.values.reshape((X_test.shape[0], X_test.shape[1], 1))
+                
+                # Train CNN model
+                trained_cnn_model = cnn_model.train(X_train_cnn, y_train, X_test_cnn, y_test)
+                
+                # Make predictions
+                y_pred_cnn = cnn_model.predict(X_test_cnn)
+                
+                # Store results
+                self.trained_models["cnn_model"] = {
+                    'model': trained_cnn_model,
+                    'predictions': y_pred_cnn,
+                    'true_values': y_test,
+                    'model_type': 'cnn'
+                }
+                
+                logger.info("CNN model training completed")
+                
+            except Exception as e:
+                logger.error(f"CNN model training failed: {e}")
+            
         except Exception as e:
             logger.error(f"Model training failed: {e}")
             raise
@@ -307,8 +347,10 @@ class MedicalInsuranceSystem:
             # Determine output directory
             if model_type == 'linear':
                 output_dir = self.config.output_config.linear_result_dir
-            else:
+            elif model_type == 'gradient':
                 output_dir = self.config.output_config.gradient_result_dir
+            else:  # cnn
+                output_dir = self.config.output_config.cnn_result_dir
             
             # Create figure with subplots
             fig, axes = plt.subplots(2, 2, figsize=(16, 12))
@@ -392,8 +434,10 @@ class MedicalInsuranceSystem:
             # Determine output directory
             if model_type == 'linear':
                 output_dir = self.config.output_config.linear_result_dir
-            else:
+            elif model_type == 'gradient':
                 output_dir = self.config.output_config.gradient_result_dir
+            else:  # cnn
+                output_dir = self.config.output_config.cnn_result_dir
             
             # Save metrics as JSON
             json_filename = f"{model_name}_metrics.json"
@@ -556,6 +600,7 @@ class MedicalInsuranceSystem:
         print(f"\nOUTPUT LOCATIONS:")
         print(f"- Linear regression results: {os.path.join(self.config.output_config.output_dir, 'linear_results')}")
         print(f"- Gradient boosting results: {os.path.join(self.config.output_config.output_dir, 'gradient_results')}")
+        print(f"- CNN model results: {os.path.join(self.config.output_config.output_dir, 'cnn_results')}")
         print(f"- Model comparison: {os.path.join(self.config.output_config.output_dir, 'model_comparison.png')}")
         
         print("\n" + "=" * 80)
