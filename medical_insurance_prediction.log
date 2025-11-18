@@ -1,0 +1,275 @@
+2025-11-18 21:52:46,660 - __main__ - ERROR - Program execution failed: 'OutputConfig' object has no attribute 'base_output_dir'
+2025-11-18 21:53:53,102 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:53:53,102 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:53:53,102 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:53:53,102 - __main__ - ERROR - Data loading failed: 'DataLoader' object has no attribute 'load_data'
+2025-11-18 21:53:53,102 - __main__ - ERROR - Automated pipeline failed: 'DataLoader' object has no attribute 'load_data'
+2025-11-18 21:53:53,102 - __main__ - ERROR - Program execution failed: 'DataLoader' object has no attribute 'load_data'
+2025-11-18 21:54:17,091 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:54:17,091 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:54:17,091 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:54:17,293 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:54:17,293 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:54:17,406 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:54:17,406 - __main__ - ERROR - Data preprocessing failed: 'DataPreprocessor' object has no attribute 'handle_outliers'
+2025-11-18 21:54:17,406 - __main__ - ERROR - Automated pipeline failed: 'DataPreprocessor' object has no attribute 'handle_outliers'
+2025-11-18 21:54:17,406 - __main__ - ERROR - Program execution failed: 'DataPreprocessor' object has no attribute 'handle_outliers'
+2025-11-18 21:54:35,194 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:54:35,194 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:54:35,194 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:54:35,390 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:54:35,390 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:54:35,501 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:54:35,597 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:54:35,597 - __main__ - ERROR - Data preprocessing failed: DataPreprocessor.encode_categorical_features() got an unexpected keyword argument 'categorical_features'
+2025-11-18 21:54:35,597 - __main__ - ERROR - Automated pipeline failed: DataPreprocessor.encode_categorical_features() got an unexpected keyword argument 'categorical_features'
+2025-11-18 21:54:35,597 - __main__ - ERROR - Program execution failed: DataPreprocessor.encode_categorical_features() got an unexpected keyword argument 'categorical_features'
+2025-11-18 21:54:48,714 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:54:48,714 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:54:48,714 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:54:48,910 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:54:48,910 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:54:49,015 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:54:49,100 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:54:49,115 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:54:49,130 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:54:49,130 - __main__ - ERROR - Data preprocessing failed: "['children'] not in index"
+2025-11-18 21:54:49,130 - __main__ - ERROR - Automated pipeline failed: "['children'] not in index"
+2025-11-18 21:54:49,130 - __main__ - ERROR - Program execution failed: "['children'] not in index"
+2025-11-18 21:56:23,964 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:56:23,964 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:56:23,964 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:56:24,172 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:56:24,172 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:56:24,283 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:56:24,368 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:56:24,383 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:56:24,397 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:56:24,404 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:56:24,405 - __main__ - ERROR - Data preprocessing failed: DataPreprocessor.split_data() got multiple values for argument 'test_size'
+2025-11-18 21:56:24,405 - __main__ - ERROR - Automated pipeline failed: DataPreprocessor.split_data() got multiple values for argument 'test_size'
+2025-11-18 21:56:24,405 - __main__ - ERROR - Program execution failed: DataPreprocessor.split_data() got multiple values for argument 'test_size'
+2025-11-18 21:57:08,474 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:57:08,474 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:57:08,474 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:57:08,670 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:57:08,670 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:57:08,778 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:57:08,861 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:57:08,875 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:57:08,891 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:57:08,896 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:57:08,896 - __main__ - ERROR - Data preprocessing failed: Target column 'annual_medical_cost' does not exist in dataset
+2025-11-18 21:57:08,896 - __main__ - ERROR - Automated pipeline failed: Target column 'annual_medical_cost' does not exist in dataset
+2025-11-18 21:57:08,896 - __main__ - ERROR - Program execution failed: Target column 'annual_medical_cost' does not exist in dataset
+2025-11-18 21:57:22,634 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:57:22,634 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:57:22,634 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:57:22,822 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:57:22,822 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:57:22,930 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:57:23,016 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:57:23,031 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:57:23,041 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:57:23,046 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:57:23,049 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 21:57:23,054 - __main__ - INFO - Starting model training
+2025-11-18 21:57:23,054 - __main__ - INFO - Training linear regression models
+2025-11-18 21:57:23,054 - __main__ - ERROR - Model training failed: 'LinearRegressionModel' object has no attribute 'create_models'
+2025-11-18 21:57:23,054 - __main__ - ERROR - Automated pipeline failed: 'LinearRegressionModel' object has no attribute 'create_models'
+2025-11-18 21:57:23,054 - __main__ - ERROR - Program execution failed: 'LinearRegressionModel' object has no attribute 'create_models'
+2025-11-18 21:57:54,445 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:57:54,446 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:57:54,446 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:57:54,656 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:57:54,656 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:57:54,765 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:57:54,852 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:57:54,866 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:57:54,880 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:57:54,886 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:57:54,889 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 21:57:54,893 - __main__ - INFO - Starting model training
+2025-11-18 21:57:54,893 - __main__ - INFO - Training linear regression models
+2025-11-18 21:57:54,893 - __main__ - INFO - Training linear regression model
+2025-11-18 21:57:54,893 - __main__ - ERROR - Linear linear model training failed: Expected 2D array, got scalar array instead:
+array=<linear_model.LinearRegressionModel object at 0x16dcf7d40>.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-11-18 21:57:54,893 - __main__ - INFO - Training ridge regression model
+2025-11-18 21:57:54,894 - __main__ - ERROR - Linear ridge model training failed: Expected 2D array, got scalar array instead:
+array=<linear_model.LinearRegressionModel object at 0x16d51e330>.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-11-18 21:57:54,894 - __main__ - INFO - Training lasso regression model
+2025-11-18 21:57:54,894 - __main__ - ERROR - Linear lasso model training failed: Expected 2D array, got scalar array instead:
+array=<linear_model.LinearRegressionModel object at 0x16e8a4170>.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-11-18 21:57:54,894 - __main__ - INFO - Training elastic_net regression model
+2025-11-18 21:57:54,894 - __main__ - ERROR - Linear elastic_net model training failed: Expected 2D array, got scalar array instead:
+array=<linear_model.LinearRegressionModel object at 0x16dd81460>.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-11-18 21:57:54,894 - __main__ - INFO - Training gradient boosting model
+2025-11-18 21:57:54,894 - __main__ - ERROR - Gradient boosting model training failed: 'GradientBoostingModel' object has no attribute 'create_model'
+2025-11-18 21:57:54,894 - __main__ - INFO - Starting model evaluation
+2025-11-18 21:57:54,896 - __main__ - INFO - Model evaluation completed
+2025-11-18 21:57:54,896 - __main__ - WARNING - No evaluation results available for comparison
+2025-11-18 21:57:54,896 - __main__ - ERROR - Automated pipeline failed: max() iterable argument is empty
+2025-11-18 21:57:54,896 - __main__ - ERROR - Program execution failed: max() iterable argument is empty
+2025-11-18 21:59:07,364 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:59:07,364 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:59:07,364 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:59:07,563 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:59:07,563 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:59:07,676 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:59:07,762 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:59:07,776 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:59:07,792 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:59:07,797 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:59:07,801 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 21:59:07,805 - __main__ - INFO - Starting model training
+2025-11-18 21:59:07,805 - __main__ - INFO - Training linear regression models
+2025-11-18 21:59:07,805 - __main__ - INFO - Training linear regression model
+2025-11-18 21:59:10,125 - __main__ - INFO - Linear linear model training completed
+2025-11-18 21:59:10,125 - __main__ - INFO - Training ridge regression model
+2025-11-18 21:59:11,222 - __main__ - INFO - Linear ridge model training completed
+2025-11-18 21:59:11,222 - __main__ - INFO - Training lasso regression model
+2025-11-18 21:59:11,765 - __main__ - INFO - Linear lasso model training completed
+2025-11-18 21:59:11,765 - __main__ - INFO - Training elastic_net regression model
+2025-11-18 21:59:12,497 - __main__ - INFO - Linear elastic_net model training completed
+2025-11-18 21:59:12,497 - __main__ - INFO - Training gradient boosting model
+2025-11-18 21:59:12,497 - __main__ - ERROR - Gradient boosting model training failed: argument of type 'ConfigManager' is not iterable
+2025-11-18 21:59:12,497 - __main__ - INFO - Starting model evaluation
+2025-11-18 21:59:12,499 - __main__ - INFO - Evaluating linear_linear model
+2025-11-18 21:59:12,502 - __main__ - ERROR - Failed to create visualizations for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,502 - __main__ - ERROR - Failed to save numerical results for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,502 - __main__ - INFO - Evaluating linear_ridge model
+2025-11-18 21:59:12,504 - __main__ - ERROR - Failed to create visualizations for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,504 - __main__ - ERROR - Failed to save numerical results for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,504 - __main__ - INFO - Evaluating linear_lasso model
+2025-11-18 21:59:12,506 - __main__ - ERROR - Failed to create visualizations for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,506 - __main__ - ERROR - Failed to save numerical results for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,509 - __main__ - INFO - Evaluating linear_elastic_net model
+2025-11-18 21:59:12,510 - __main__ - ERROR - Failed to create visualizations for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,510 - __main__ - ERROR - Failed to save numerical results for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:12,510 - __main__ - INFO - Model evaluation completed
+2025-11-18 21:59:13,438 - __main__ - INFO - Model comparison plot saved: ./output/model_comparison.png
+2025-11-18 21:59:13,439 - __main__ - INFO - Automated pipeline completed in 0:00:06.074197
+2025-11-18 21:59:37,073 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:59:37,073 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:59:37,073 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:59:37,259 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:59:37,259 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:59:37,366 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:59:37,452 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:59:37,466 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:59:37,478 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:59:37,484 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:59:37,487 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 21:59:37,492 - __main__ - INFO - Starting model training
+2025-11-18 21:59:37,492 - __main__ - INFO - Training linear regression models
+2025-11-18 21:59:37,492 - __main__ - INFO - Training linear regression model
+2025-11-18 21:59:39,696 - __main__ - INFO - Linear linear model training completed
+2025-11-18 21:59:39,697 - __main__ - INFO - Training ridge regression model
+2025-11-18 21:59:40,687 - __main__ - INFO - Linear ridge model training completed
+2025-11-18 21:59:40,687 - __main__ - INFO - Training lasso regression model
+2025-11-18 21:59:41,272 - __main__ - INFO - Linear lasso model training completed
+2025-11-18 21:59:41,272 - __main__ - INFO - Training elastic_net regression model
+2025-11-18 21:59:41,913 - __main__ - INFO - Linear elastic_net model training completed
+2025-11-18 21:59:41,913 - __main__ - INFO - Training gradient boosting model
+2025-11-18 21:59:41,913 - __main__ - ERROR - Gradient boosting model training failed: argument of type 'ConfigManager' is not iterable
+2025-11-18 21:59:41,913 - __main__ - INFO - Starting model evaluation
+2025-11-18 21:59:41,915 - __main__ - INFO - Evaluating linear_linear model
+2025-11-18 21:59:41,954 - __main__ - ERROR - Failed to create visualizations for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,954 - __main__ - ERROR - Failed to save numerical results for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,954 - __main__ - INFO - Evaluating linear_ridge model
+2025-11-18 21:59:41,955 - __main__ - ERROR - Failed to create visualizations for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,955 - __main__ - ERROR - Failed to save numerical results for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,955 - __main__ - INFO - Evaluating linear_lasso model
+2025-11-18 21:59:41,956 - __main__ - ERROR - Failed to create visualizations for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,956 - __main__ - ERROR - Failed to save numerical results for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,960 - __main__ - INFO - Evaluating linear_elastic_net model
+2025-11-18 21:59:41,961 - __main__ - ERROR - Failed to create visualizations for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,961 - __main__ - ERROR - Failed to save numerical results for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:41,961 - __main__ - INFO - Model evaluation completed
+2025-11-18 21:59:42,755 - __main__ - INFO - Model comparison plot saved: ./output/model_comparison.png
+2025-11-18 21:59:42,755 - __main__ - INFO - Automated pipeline completed in 0:00:05.682132
+2025-11-18 21:59:52,627 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 21:59:52,627 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 21:59:52,627 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 21:59:52,811 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 21:59:52,811 - __main__ - INFO - Starting data preprocessing
+2025-11-18 21:59:52,921 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 21:59:53,005 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 21:59:53,021 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 21:59:53,032 - __main__ - INFO - Feature engineering completed
+2025-11-18 21:59:53,037 - __main__ - INFO - Feature scaling completed
+2025-11-18 21:59:53,040 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 21:59:53,045 - __main__ - INFO - Starting model training
+2025-11-18 21:59:53,045 - __main__ - INFO - Training linear regression models
+2025-11-18 21:59:53,045 - __main__ - INFO - Training linear regression model
+2025-11-18 21:59:55,348 - __main__ - INFO - Linear linear model training completed
+2025-11-18 21:59:55,348 - __main__ - INFO - Training ridge regression model
+2025-11-18 21:59:56,371 - __main__ - INFO - Linear ridge model training completed
+2025-11-18 21:59:56,371 - __main__ - INFO - Training lasso regression model
+2025-11-18 21:59:56,789 - __main__ - INFO - Linear lasso model training completed
+2025-11-18 21:59:56,789 - __main__ - INFO - Training elastic_net regression model
+2025-11-18 21:59:57,408 - __main__ - INFO - Linear elastic_net model training completed
+2025-11-18 21:59:57,408 - __main__ - INFO - Training gradient boosting model
+2025-11-18 21:59:57,409 - __main__ - ERROR - Gradient boosting model training failed: argument of type 'ConfigManager' is not iterable
+2025-11-18 21:59:57,409 - __main__ - INFO - Starting model evaluation
+2025-11-18 21:59:57,409 - __main__ - INFO - Evaluating linear_linear model
+2025-11-18 21:59:57,411 - __main__ - ERROR - Failed to create visualizations for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,411 - __main__ - ERROR - Failed to save numerical results for linear_linear: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,411 - __main__ - INFO - Evaluating linear_ridge model
+2025-11-18 21:59:57,411 - __main__ - ERROR - Failed to create visualizations for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,411 - __main__ - ERROR - Failed to save numerical results for linear_ridge: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,411 - __main__ - INFO - Evaluating linear_lasso model
+2025-11-18 21:59:57,412 - __main__ - ERROR - Failed to create visualizations for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,412 - __main__ - ERROR - Failed to save numerical results for linear_lasso: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,412 - __main__ - INFO - Evaluating linear_elastic_net model
+2025-11-18 21:59:57,413 - __main__ - ERROR - Failed to create visualizations for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,413 - __main__ - ERROR - Failed to save numerical results for linear_elastic_net: 'OutputConfig' object has no attribute 'linear_result_dir'
+2025-11-18 21:59:57,413 - __main__ - INFO - Model evaluation completed
+2025-11-18 21:59:58,240 - __main__ - INFO - Model comparison plot saved: ./output/model_comparison.png
+2025-11-18 21:59:58,241 - __main__ - INFO - Automated pipeline completed in 0:00:05.613830
+2025-11-18 22:01:06,014 - __main__ - INFO - Medical Insurance Prediction System initialized
+2025-11-18 22:01:06,015 - __main__ - INFO - Starting automated medical insurance cost prediction pipeline
+2025-11-18 22:01:06,015 - __main__ - INFO - Loading data from: /Users/kwunchungchan/Library/CloudStorage/坚果云-a524615236@163.com/CUHKSZ/数据分析5918/project/medical_insurance.csv
+2025-11-18 22:01:06,218 - __main__ - INFO - Data loaded successfully, shape: (100000, 54)
+2025-11-18 22:01:06,218 - __main__ - INFO - Starting data preprocessing
+2025-11-18 22:01:06,330 - __main__ - INFO - After basic cleaning, shape: (69917, 54)
+2025-11-18 22:01:06,410 - __main__ - INFO - After outlier handling, shape: (51557, 54)
+2025-11-18 22:01:06,424 - __main__ - INFO - Categorical feature encoding completed
+2025-11-18 22:01:06,438 - __main__ - INFO - Feature engineering completed
+2025-11-18 22:01:06,444 - __main__ - INFO - Feature scaling completed
+2025-11-18 22:01:06,447 - __main__ - INFO - Data splitting completed - Train: (41245, 15), Test: (10312, 15)
+2025-11-18 22:01:06,452 - __main__ - INFO - Starting model training
+2025-11-18 22:01:06,452 - __main__ - INFO - Training linear regression models
+2025-11-18 22:01:06,452 - __main__ - INFO - Training linear regression model
+2025-11-18 22:01:08,616 - __main__ - INFO - Linear linear model training completed
+2025-11-18 22:01:08,617 - __main__ - INFO - Training ridge regression model
+2025-11-18 22:01:09,638 - __main__ - INFO - Linear ridge model training completed
+2025-11-18 22:01:09,638 - __main__ - INFO - Training lasso regression model
+2025-11-18 22:01:10,838 - __main__ - INFO - Linear lasso model training completed
+2025-11-18 22:01:10,838 - __main__ - INFO - Training elastic_net regression model
+2025-11-18 22:01:11,439 - __main__ - INFO - Linear elastic_net model training completed
+2025-11-18 22:01:11,439 - __main__ - INFO - Training gradient boosting model
+2025-11-18 22:07:19,294 - __main__ - INFO - Gradient boosting model training completed
+2025-11-18 22:07:19,296 - __main__ - INFO - Starting model evaluation
+2025-11-18 22:07:19,297 - __main__ - INFO - Evaluating linear_linear model
+2025-11-18 22:07:20,479 - __main__ - INFO - Visualization saved: ./output/linear_results/linear_linear_evaluation.png
+2025-11-18 22:07:20,483 - __main__ - INFO - Numerical results saved for linear_linear
+2025-11-18 22:07:20,483 - __main__ - INFO - Evaluating linear_ridge model
+2025-11-18 22:07:21,254 - __main__ - INFO - Visualization saved: ./output/linear_results/linear_ridge_evaluation.png
+2025-11-18 22:07:21,255 - __main__ - INFO - Numerical results saved for linear_ridge
+2025-11-18 22:07:21,255 - __main__ - INFO - Evaluating linear_lasso model
+2025-11-18 22:07:22,096 - __main__ - INFO - Visualization saved: ./output/linear_results/linear_lasso_evaluation.png
+2025-11-18 22:07:22,096 - __main__ - INFO - Numerical results saved for linear_lasso
+2025-11-18 22:07:22,096 - __main__ - INFO - Evaluating linear_elastic_net model
+2025-11-18 22:07:22,858 - __main__ - INFO - Visualization saved: ./output/linear_results/linear_elastic_net_evaluation.png
+2025-11-18 22:07:22,859 - __main__ - INFO - Numerical results saved for linear_elastic_net
+2025-11-18 22:07:22,859 - __main__ - INFO - Evaluating gradient_boosting model
+2025-11-18 22:07:23,612 - __main__ - INFO - Visualization saved: ./output/gradient_results/gradient_boosting_evaluation.png
+2025-11-18 22:07:23,613 - __main__ - INFO - Numerical results saved for gradient_boosting
+2025-11-18 22:07:23,613 - __main__ - INFO - Model evaluation completed
+2025-11-18 22:07:24,276 - __main__ - INFO - Model comparison plot saved: ./output/model_comparison.png
+2025-11-18 22:07:24,277 - __main__ - INFO - Automated pipeline completed in 0:06:18.261760
