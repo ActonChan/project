@@ -41,8 +41,8 @@ def train_with_gpu():
         fc_layers=[128, 64, 32, 1],  # 全连接层（原始配置）
         learning_rate=0.001,   # 学习率
         batch_size=512,        # 批次大小 (GPU可以处理更大的批次)
-        epochs=5,              # 训练轮数
-        patience=3,            # 早停耐心值
+        epochs=100,              # 训练轮数
+        patience=8,            # 早停耐心值
         target_column='annual_premium'  # 目标列名
     )
     
