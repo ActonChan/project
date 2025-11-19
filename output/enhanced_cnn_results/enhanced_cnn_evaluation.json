@@ -1,0 +1,137 @@
+{
+  "training_results": {
+    "final_train_loss": 33767.38852835463,
+    "final_val_loss": 9470.05078125,
+    "best_val_loss": 5154.08935546875,
+    "total_epochs": 10,
+    "model_info": {
+      "model_type": "CNN Enhanced",
+      "total_parameters": 28449,
+      "trainable_parameters": 28449,
+      "conv_layers": 2,
+      "filters": [
+        16,
+        32
+      ],
+      "fc_layers": [
+        128,
+        64,
+        32,
+        16,
+        1
+      ],
+      "activation": "relu",
+      "dropout_rate": 0.2,
+      "input_shape": "(1, 4, 13)",
+      "output_size": 1
+    },
+    "training_history": {
+      "train_losses": [
+        135488.97490265575,
+        44976.91772538938,
+        39912.09921001398,
+        36445.14362644769,
+        36208.14013827875,
+        35686.41348841853,
+        33483.472550169725,
+        34738.403161192095,
+        33044.195587060705,
+        33767.38852835463
+      ],
+      "val_losses": [
+        13956.458984375,
+        9539.318359375,
+        8720.173828125,
+        8337.6591796875,
+        10876.443359375,
+        7423.69580078125,
+        8329.8818359375,
+        5154.08935546875,
+        5886.3720703125,
+        9470.05078125
+      ]
+    }
+  },
+  "evaluation_results": {
+    "MSE": 9701.4912109375,
+    "RMSE": 98.49614820355922,
+    "MAE": 74.9689712524414,
+    "R²": 0.9414708018302917,
+    "predictions": [
+      354.2262268066406,
+      440.8518371582031,
+      223.11793518066406,
+      453.7120056152344,
+      259.52410888671875,
+      362.7463073730469,
+      514.0811157226562,
+      797.4191284179688,
+      256.01959228515625,
+      317.7852783203125
+    ],
+    "actual_values": [
+      401.9200134277344,
+      539.3400268554688,
+      273.42999267578125,
+      476.42999267578125,
+      316.0400085449219,
+      457.0899963378906,
+      585.5700073242188,
+      836.4299926757812,
+      292.7900085449219,
+      369.69000244140625
+    ],
+    "model_info": {
+      "model_type": "CNN Enhanced",
+      "total_parameters": 28449,
+      "trainable_parameters": 28449,
+      "conv_layers": 2,
+      "filters": [
+        16,
+        32
+      ],
+      "fc_layers": [
+        128,
+        64,
+        32,
+        16,
+        1
+      ],
+      "activation": "relu",
+      "dropout_rate": 0.2,
+      "input_shape": "(1, 4, 13)",
+      "output_size": 1
+    }
+  },
+  "model_config": {
+    "input_dim": 52,
+    "sequence_length": 13,
+    "conv_layers": 2,
+    "filters": [
+      16,
+      32
+    ],
+    "kernel_sizes": [
+      5,
+      3
+    ],
+    "activation": "relu",
+    "dropout_rate": 0.2,
+    "fc_layers": [
+      128,
+      64,
+      32,
+      1
+    ],
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "epochs": 10,
+    "patience": 5,
+    "use_batch_norm": true,
+    "use_dropout": true,
+    "target_column": "annual_premium",
+    "reshape_width": 4
+  },
+  "timestamp": "2025-11-19T17:23:37.159843",
+  "model_type": "Enhanced CNN with additional fully connected layer"
+}

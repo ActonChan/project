@@ -1,0 +1,124 @@
+{
+  "training_results": {
+    "final_train_loss": 23302.62918615645,
+    "final_val_loss": 5125.98046875,
+    "best_val_loss": 5125.98046875,
+    "total_epochs": 5,
+    "model_info": {
+      "model_type": "CNN",
+      "total_parameters": 27937,
+      "trainable_parameters": 27937,
+      "conv_layers": 2,
+      "filters": [
+        16,
+        32
+      ],
+      "fc_layers": [
+        128,
+        64,
+        32,
+        1
+      ],
+      "activation": "relu",
+      "dropout_rate": 0.2,
+      "input_shape": "(1, 4, 13)",
+      "output_size": 1
+    },
+    "training_history": {
+      "train_losses": [
+        177475.75189092357,
+        33620.98925159236,
+        26732.20599870621,
+        24895.999931578423,
+        23302.62918615645
+      ],
+      "val_losses": [
+        25369.296875,
+        11685.7578125,
+        15126.9130859375,
+        6970.95166015625,
+        5125.98046875
+      ]
+    }
+  },
+  "evaluation_results": {
+    "MSE": 5033.78515625,
+    "RMSE": 70.94917297363281,
+    "MAE": 50.057403564453125,
+    "R²": 0.9696311054808874,
+    "predictions": [
+      378.2529602050781,
+      442.0826416015625,
+      272.27020263671875,
+      375.430419921875,
+      274.00164794921875,
+      387.4256591796875,
+      508.54925537109375,
+      996.220703125,
+      302.66619873046875,
+      352.750244140625
+    ],
+    "actual_values": [
+      401.9200134277344,
+      539.3400268554688,
+      273.42999267578125,
+      476.42999267578125,
+      316.0400085449219,
+      457.0899963378906,
+      585.5700073242188,
+      836.4299926757812,
+      292.7900085449219,
+      369.69000244140625
+    ],
+    "model_info": {
+      "model_type": "CNN",
+      "total_parameters": 27937,
+      "trainable_parameters": 27937,
+      "conv_layers": 2,
+      "filters": [
+        16,
+        32
+      ],
+      "fc_layers": [
+        128,
+        64,
+        32,
+        1
+      ],
+      "activation": "relu",
+      "dropout_rate": 0.2,
+      "input_shape": "(1, 4, 13)",
+      "output_size": 1
+    }
+  },
+  "model_config": {
+    "input_dim": 52,
+    "sequence_length": 13,
+    "conv_layers": 2,
+    "filters": [
+      16,
+      32
+    ],
+    "kernel_sizes": [
+      5,
+      3
+    ],
+    "activation": "relu",
+    "dropout_rate": 0.2,
+    "fc_layers": [
+      128,
+      64,
+      32,
+      1
+    ],
+    "learning_rate": 0.001,
+    "batch_size": 512,
+    "epochs": 5,
+    "patience": 3,
+    "use_batch_norm": true,
+    "use_dropout": true,
+    "target_column": "annual_premium",
+    "reshape_width": 4
+  },
+  "timestamp": "2025-11-19T16:14:06.493980"
+}

@@ -1,112 +1,67 @@
 # -*- coding: utf-8 -*-
 """
-Data Import Module
-Responsible for data reading and preliminary loading functionality
+数据加载模块
+提供从CSV文件加载数据的功能
 """
 
 import pandas as pd
 import os
-from typing import Dict, List, Optional, Union
 
 
 class DataLoader:
     """
-    Data Loader Class
-    Responsible for reading and loading datasets from filesystem
+    数据加载器类
+    负责从CSV文件加载数据
     """
     
-    def __init__(self):
-        """Initialize data loader"""
-        self.data = None
-        self.file_path = None
-        
-    def load_from_csv(self, file_path):
+    def __init__(self, data_dir='.'):
         """
-        Load data from CSV file
+        初始化数据加载器
         
-        Parameters:
-            file_path (str): Path to CSV file
-            
-        Returns:
-            pd.DataFrame: Loaded dataset
-            
-        Raises:
-            FileNotFoundError: When file doesn't exist
-            pd.errors.EmptyDataError: When file is empty
+        Args:
+            data_dir (str): 数据目录路径，默认为当前目录
         """
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"Data file does not exist: {file_path}")
-        
-        try:
-            # Read CSV file
-            self.data = pd.read_csv(file_path)
-            self.file_path = file_path
-            
-            print(f"Successfully loaded data file: {file_path}")
-            print(f"Dataset size: {self.data.shape}")
-            print(f"Column names: {list(self.data.columns)}")
-            
-            return self.data
-            
-        except pd.errors.EmptyDataError:
-            raise ValueError(f"Data file is empty: {file_path}")
-        except Exception as e:
-            raise ValueError(f"Error reading data file: {e}")
+        self.data_dir = data_dir
     
-    def get_data_info(self):
+    def load_from_csv(self, filename):
         """
-        Get basic information about the dataset
+        从CSV文件加载数据
         
+        Args:
+            filename (str): CSV文件名
+            
         Returns:
-            dict: Dictionary containing dataset basic information
+            pd.DataFrame: 加载的数据
         """
-        if self.data is None:
-            return {"error": "Data not loaded yet"}
+        file_path = os.path.join(self.data_dir, filename)
         
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"数据文件不存在: {file_path}")
+        
+        # 使用pandas读取CSV文件
+        data = pd.read_csv(file_path)
+        
+        # 清理列名中的空格
+        data.columns = data.columns.str.strip()
+        
+        return data
+    
+    def get_data_info(self, data):
+        """
+        获取数据基本信息
+        
+        Args:
+            data (pd.DataFrame): 数据框
+            
+        Returns:
+            dict: 数据信息
+        """
         info = {
-            "data_shape": self.data.shape,
-            "num_columns": len(self.data.columns),
-            "num_rows": len(self.data),
-            "missing_values": self.data.isnull().sum().sum(),
-            "data_types": self.data.dtypes.to_dict()
+            'shape': data.shape,
+            'columns': list(data.columns),
+            'dtypes': data.dtypes.to_dict(),
+            'null_counts': data.isnull().sum().to_dict(),
+            'memory_usage': data.memory_usage(deep=True).sum()
         }
         
         return info
-    
-    def preview_data(self, n_rows=5):
-        """
-        Preview first few rows of dataset
-        
-        Parameters:
-            n_rows (int): Number of rows to preview, default 5 rows
-            
-        Returns:
-            pd.DataFrame: Preview data
-        """
-        if self.data is None:
-            print("Data not loaded")
-            return None
-        
-        print(f"Dataset preview (first {n_rows} rows):")
-        return self.data.head(n_rows)
-    
-    def get_column_info(self):
-        """
-        Get detailed column information
-        
-        Returns:
-            pd.DataFrame: DataFrame containing column information
-        """
-        if self.data is None:
-            print("Data not loaded")
-            return None
-        
-        column_info = pd.DataFrame({
-            'Column': self.data.columns,
-            'Type': self.data.dtypes,
-            'Non-Null Count': self.data.count(),
-            'Null Count': self.data.isnull().sum(),
-            'Unique Values': self.data.nunique()
-        })
-        
-        return column_info
